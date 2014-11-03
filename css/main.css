@@ -1,4 +1,32 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*===================================================================================================================================================================================================================================
+*
+* 
+* Author: Branden Dane - Full Stack Developer
+* Contact Email: Branden@DaneTheory.com
+* My Portfolio & Other Goodies Can Be Found At: 
+* =======> http://www.DaneTheory.com/ <========
+*                 
+*                 ;                                                                                                                 
+*                 ED.                                                                                   :                           
+*                 E#Wi                     L.                     ,;                             ,;    t#,                          
+*                 E###G.                   EW:        ,ft       f#i          .    .            f#i    ;##W.   j.                    
+*                 E#fD#W;               .. E##;       t#E     .E#t  GEEEEEEELDi   Dt         .E#t    :#L:WE   EW,        f.     ;WE.
+*                 E#t t##L             ;W, E###t      t#E    i#W,   ,;;L#K;;.E#i  E#i       i#W,    .KG  ,#D  E##j       E#,   i#G  
+*                 E#t  .E#K,          j##, E#fE#f     t#E   L#D.       t#E   E#t  E#t      L#D.     EE    ;#f E###D.     E#t  f#f   
+*                 E#t    j##f        G###, E#t D#G    t#E :K#Wfff;     t#E   E#t  E#t    :K#Wfff;  f#.     t#iE#jG#W;    E#t G#i    
+*                 E#t    :E#K:     :E####, E#t  f#E.  t#E i##WLLLLt    t#E   E########f. i##WLLLLt :#G     GK E#t t##f   E#jEW,     
+*                 E#t   t##L      ;W#DG##, E#t   t#K: t#E  .E#L        t#E   E#j..K#j...  .E#L      ;#L   LW. E#t  :K#E: E##E.      
+*                 E#t .D#W;      j###DW##, E#t    ;#W,t#E    f#E:      t#E   E#t  E#t       f#E:     t#f f#:  E#KDDDD###iE#G        
+*                 E#tiW#G.      G##i,,G##, E#t     :K#D#E     ,WW;     t#E   E#t  E#t        ,WW;     f#D#;   E#f,t#Wi,,,E#t        
+*                 E#K##i      :K#K:   L##, E#t      .E##E      .D#;    t#E   f#t  f#t         .D#;     G#t    E#t  ;#W:  E#t        
+*                 E##D.      ;##D.    L##, ..         G#E        tt     fE    ii   ii           tt      t     DWi   ,KK: EE.        
+*                 E#t        ,,,      .,,              fE                :                                               t          
+*                 L:                                    ,                                                                           
+*
+*                                                 "Knock On The Sky And Listen To The Sound"
+*
+*
+*==================================================================================================================================================================================================================================*/
 
 html,
 button,
@@ -49,6 +77,17 @@ textarea {
     resize: vertical;
 }
 
+/* ==========================================================================
+   GLOBAL MARGIN/PADDING FIX
+   ========================================================================== */
+* {
+    margin:0px;
+    padding:0px;
+}
+
+/* ==========================================================================
+   Browser Happy Prompt
+   ========================================================================== */
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -56,11 +95,9 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+/* ==========================================================================
+  INITIALIZR RESPONSIVE STYLES
    ========================================================================== */
-
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
@@ -73,7 +110,9 @@ body {
 /* ===================
     ALL: Orange Theme
    =================== */
-
+.footer-container {
+    display:none;
+}
 .header-container {
     border-bottom: 20px solid #e44d26;
 }
@@ -155,9 +194,37 @@ nav a:hover {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
+  Branden Dane custom styles n junk
+========================================================================== */
+/**
+*** PRELOADER STYLES***/
+#preloader {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 999;
+    width:100%;
+    min-height: 100%;
+}
+#status {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('../images/status.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+    background-size: cover;
+}
+/**
+*** END PRELOADER STYLES***/
 
 
 
