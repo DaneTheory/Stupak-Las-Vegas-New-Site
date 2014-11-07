@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Stupak Las Vegas</title>
@@ -12,14 +12,13 @@
 	    <meta name="keywords" content="stupak las vegas entertainment experience travel">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
 <!--STYLESHEETS-->
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        
 
 <!--VENDOR FIXES-->
-        <script src="../js/vendor/prefixfree.min.js"></script>
+        <script src="js/vendor/prefixfree.min.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <!--[if lt IE 9]>
 	        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,97 +27,92 @@
 <!--INITIALIZR BOLIERPLATE SCRIPTS-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="js/libs/scotchPanels.js"></script>
+        <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        
-<!--HELPER BAKED SCRIPTS-->
-    <script type="text/javascript" src="../js/libs/jquery.fittext.js"></script>
-        
-<!--FITTEXT JS SNIPPETS-->
-<script>
-  jQuery("").fitText();
-</script> 
-        
-    </head>
+        <script src="../runtime/verold.loader.js"></script>
+        <script>
+            verold.load('body', '../runtime/application.json');
+        </script>
+
+<!--SVG SCRIPTS-->
+    <script src="js/libs/svg-injector.map.js"></script>
+    <script src="js/libs/svg-injector.js"></script>
+
+<!--
+----MAIN SITE NAVIGATION--> 
+<div class="stupakNav">
+            <img src="../images/stupak-logo-main.svg" class="stupakLogo svg-inject" data-src="../images/stupak-logo-main.svg" data-fallback="../images/png/stupak-logo-main.png"/>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="team.html">OUR TEAM</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="events.html">EVENTS</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                 </nav>
+        </div>
+<img src="../images/menu-icon.svg" class="stupakNav-icon svg-inject" data-src="../images/menu-icon.svg" data-fallback="../images/png/menu-icon.png"/>
+<!--
+----END MAIN SITE NAVIGATION--> 
+
+</head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
         
 <!------------------------------------------------ BEGIN BODY ------------------------------------------------->
-
 <!-- Pre-Loader -->
 <div id="preloader">
     <div id="status">&nbsp;</div>
 </div>
-
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>
-            </header>
+    <!-- Fallback ThreeJS Pre-Loader -->
+    <div id="load-scene" class="load-scene">
+        <div class="load-progress">
+            <a id="load-text">LOADING STUPAK LAS VEGAS</a>
+        
+            <div class="load-bar-wrapper">
+                <div id="load-bar" class="load-bar"></div>
+            </div>
         </div>
-
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-
-                <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
-                </article>
-
-                <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </aside>
-
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h3>footer</h3>
-            </footer>1
+            <div class="load-screen-logo"><img src="../production/images/dark-logo.png"></div>
         </div>
+                
+            <!--Main Text-->
+            <div id="text-toggle-wrapper">
+                <div id="textMain">
+                    <h1 class="experience">EXPERIENCE</h1>
+                    <h1 class="lasVegas">LAS VEGAS</h1>
+                </div>
+                
+                <!--Play Button-->
+                <a href="#" class="toggle-panel"><img src="../images/playButton.svg" class="stupakNav-playButton svg-inject" data-src="../images/playButton.svg" data-fallback="../images/png/playButton.png"/></a>                
+            </div>
+                
+                <!--Exit Video Container Button-->
+                <div id="text-toggle-exit"><a href="#" class="toggle-panel2"><img src="../images/exit.svg" class="stupakNav-exitButton svg-inject" data-src="../images/exit.svg" data-fallback="../images/png/exit.png"/></a></div>
+                
+            <!--Video Container-->
+            <div class="scotch-panel-wrapper"><div id="scotch-panel"></div></div>
+
+            <!-- ThreeJS Scene -->
+            <div id="verold3d" class="contents"></div>
 
 <!------------------------------------------------ END BODY ------------------------------------------------->
-
 <!-- PRELOADER CUSTOM JS -->
-    <script type="text/javascript" src="../js/libs/Preloader.js"></script> 
-<!-- ADDITIONAL HELPER SCRIPTS -->
-    <script type="text/javascript" src="../js/libs/retina.min.js"></script>  
-
-<!-- TODO: Google Analytics
------------------------------>
-<!-- GOOGLE ANALYTICS: EDIT UA-XXXXX-X TO CORRECT ID -->
-<!-- GOOGLE ANALYTICS JS -->
+    <script type="text/javascript" src="../js/libs/Preloader.js"></script>     
+<!-- MENU SCRIPTS -->    
+    <script src="js/libs/meny.js"></script>
+<!--FAVICON SCRIPT-->
+    <script src="js/libs/favico.js"></script>
+<!-- CUSTOM SCRIPTS -->    
+    <script src="js/main.js"></script> 
+<!--Google Analytics-->
 <script type="text/javascript" src="../js/GA.js"></script>
-        
-        
-        
-
-
-<!--REMOVE BEFORE GOING LIVE DUMMY-->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':62182/autorefresh.js"></' + 'script>')</script>
     </body>
 </html>

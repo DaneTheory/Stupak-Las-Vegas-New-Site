@@ -1,0 +1,66 @@
+{
+  "jsonVersion": "0.1",
+  "config": {
+    "runtimeVersion": "0.6.7",
+    "apiBaseUrl": "",
+    "assetsBaseUrl": "//commondatastorage.googleapis.com/assets.verold.com",
+    "staticBaseUrl": "//commondatastorage.googleapis.com/assets.verold.com/production",
+    "glAssetsBaseUrl": "//commondatastorage.googleapis.com/assets.verold.com/production/assets",
+    "development": false
+  },
+  "project": {
+    "id": "5456fc7bb720f31a5f000a37",
+    "userId": "5392b67fc7e113020000057f",
+    "featured": false,
+    "privacy": "public",
+    "forkable": false,
+    "embeddable": true,
+    "published": true,
+    "hasModel": true,
+    "title": "Stupak Las Vegas",
+    "description": "",
+    "customAttribution": "",
+    "tags": [],
+    "dateCreated": "2014-11-03T03:54:35.780Z",
+    "previewImageUrl": "/media/5456fc7bb720f31a5f000a37/61bef8/d8eafacce1e09d366997d28ec0de3e60project-preview-250x250.jpg",
+    "largeImageUrl": "/media/5456fc7bb720f31a5f000a37/675896/d8eafacce1e09d366997d28ec0de3e60project-preview-600x400.jpg",
+    "originalImageUrl": "/media/5456fc7bb720f31a5f000a37/e92aca/d8eafacce1e09d366997d28ec0de3e60project-preview.png",
+    "collaborators": [],
+    "renderSettings": {},
+    "media": [],
+    "urls": [],
+    "entityId": "5456fc7bb720f31a5f000a3b",
+    "startupApplicationId": "5456fc7bb720f31a5f000a3a",
+    "counts": {
+      "views": 0,
+      "follows": 0,
+      "forks": 1
+    },
+    "domains": [],
+    "externalResources": [],
+    "allowApi": true,
+    "runnable": true,
+    "attributes": {}
+  },
+  "application": {
+    "id": "5457e0bd27112ada140001a2",
+    "projectId": "5456fc7bb720f31a5f000a37",
+    "shortId": "GfuhTB",
+    "settings": {
+      "engineOptions": {
+        "componentSettings": {
+          "enabled": true,
+          "runtime": true,
+          "editor": false,
+          "persistent": true,
+          "nonPersistent": true
+        }
+      },
+      "runtimeVersion": "0.6.7"
+    }
+  },
+  "resources": {
+    "baseUrl": "//commondatastorage.googleapis.com/s.vrld.co/p/5457e0bd27112ada140001a2/4/",
+    "entities": "resources/entities.json"
+  }
+}
