@@ -264,17 +264,30 @@ h1,
 h2 {
 	font-size: 24px;
 }
-
+.nav-wrapper{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	min-width: 50px;
+	z-index: 99999;
+}
 .stupakNav {
-	display: none;
 	padding: 20px;
-	overflow: auto;
+	overflow: hidden;
 	background: #333;
 	color: #f3f3F3;
-    z-index: 99999999999 !important;
+
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
+
+	position: absolute;
+	width: 260px;
+	height: 100%;
+	left: -100000px;
+	top: 0;
+	z-index: 1;
 }
 .stupakNav ul {
     margin: 0;
@@ -290,23 +303,34 @@ h2 {
 }
 
 .stupakNav-icon {
-	position: absolute;
-    top: 0;
-    display: block;
-    height: 100%;
-    z-index: 9999999999 !important;
+
+	display: block;
+
+
+	height: 100%;
+
     background: rgba(243, 243, 243, 1);
     box-shadow: 2px 0px 2px rgba(180, 151, 89, 1);
-    left: 0;
-    opacity: 1;
+
+
     min-width: 45px;
-    width: 10%;
+
     max-width: 70px;
     -webkit-transition: all 350ms ease-in-out;
 	   -moz-transition: all 350ms ease-in-out;
 	    -ms-transition: all 350ms ease-in-out;
 	     -o-transition: all 350ms ease-in-out;
 	        transition: all 350ms ease-in-out;
+
+
+	width: 100%;
+
+	position: absolute;
+
+	top: 0;
+
+	z-index: 2;
+
 }
 .meny-active .stupakNav-icon {
 		left: -10%;
