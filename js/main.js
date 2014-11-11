@@ -1,26 +1,26 @@
 //Menu Options
 var meny = Meny.create({
-    
+
     // The element that will be animated in from off screen
     menuElement: document.querySelector( '.stupakNav' ),
 
     // The contents that gets pushed aside while Meny is active
-    contentsElement: document.querySelector( '.contents' ),
-    contentsElement: document.querySelector( '#verold3d' ),
+    contentsElement: document.querySelector( '.contents, #verold3d' ),
+    //contentsElement: document.querySelector( '#verold3d' ),
 
     // The alignment of the menu
     position: 'left',
-    
+
     // The width of the menu (when using left/right position)
     width: 260,
-    
+
     // The mouse distance from menu position which can trigger menu to open.
     threshold: 65,
-    
+
     // Width(in px) of the thin line you see on screen when menu is in closed position.
     overlap: 0,
 
-    
+
     // Use mouse movement to automatically open/close
     mouse: true,
 
@@ -114,7 +114,7 @@ $(window).resize(function(){
 $('.toggle-panel').click(function(){
    $('#text-toggle-exit').fadeIn('slow').show();
 });
- 
+
 //on Hide button click; hide the #foo div
 $('.toggle-panel').click(function(){
    $('#text-toggle-wrapper').fadeOut('fast').hide();
@@ -124,7 +124,7 @@ $('.toggle-panel').click(function(){
 $('.toggle-panel2').click(function(){
    $('#text-toggle-wrapper').fadeIn('slow').show();
 });
- 
+
 //on Hide button click; hide the #foo div
 $('.toggle-panel2').click(function(){
    $('#text-toggle-exit').fadeOut('fast').hide();

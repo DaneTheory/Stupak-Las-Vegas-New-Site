@@ -11,11 +11,30 @@
 	    <meta name="description" content="Las Vegas Experience Creators">
 	    <meta name="keywords" content="stupak las vegas entertainment experience travel">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        
+
 <!--STYLESHEETS-->
         <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        
+		 <style type="text/css">
+	        body {
+		    	width: 100%;
+				overflow: hidden;
+			}
+			.contents {
+				background: #333;
+				padding: 20px 40px;
+				width: 100%;
+				height: 100%;
+				overflow-y: auto;
+
+				-webkit-overflow-scrolling: touch;
+				-webkit-transform-style: preserve-3d;
+
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+		</style>
 
 <!--VENDOR FIXES-->
         <script src="js/vendor/prefixfree.min.js"></script>
@@ -23,7 +42,7 @@
         <!--[if lt IE 9]>
 	        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	    <![endif]-->
-	    
+
 <!--INITIALIZR BOLIERPLATE SCRIPTS-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
@@ -40,7 +59,7 @@
     <script src="js/libs/svg-injector.min.js"></script>
 
 <!--
-----MAIN SITE NAVIGATION--> 
+----MAIN SITE NAVIGATION-->
 <div class="stupakNav">
             <img src="../images/stupak-logo-main.svg" class="stupakLogo svg-inject" data-src="../images/stupak-logo-main.svg" data-fallback="../images/png/stupak-logo-main.png"/>
                 <nav>
@@ -58,14 +77,14 @@
         </div>
 <img src="../images/menu-icon.svg" class="stupakNav-icon svg-inject" data-src="../images/menu-icon.svg" data-fallback="../images/png/menu-icon.png"/>
 <!--
-----END MAIN SITE NAVIGATION--> 
+----END MAIN SITE NAVIGATION-->
 
 </head>
     <body>
 <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-        
+
 <!------------------------------------------------ BEGIN BODY ------------------------------------------------->
 <!-- Pre-Loader -->
 <div id="preloader">
@@ -75,28 +94,28 @@
     <div id="load-scene" class="load-scene">
         <div class="load-progress">
             <a id="load-text">LOADING STUPAK LAS VEGAS</a>
-        
+
             <div class="load-bar-wrapper">
                 <div id="load-bar" class="load-bar"></div>
             </div>
         </div>
             <div class="load-screen-logo"><img src="../production/images/dark-logo.png"></div>
         </div>
-                
+
             <!--Main Text-->
             <div id="text-toggle-wrapper">
                 <div id="textMain">
                     <h1 class="experience">EXPERIENCE</h1>
                     <h1 class="lasVegas">LAS VEGAS</h1>
                 </div>
-                
+
                 <!--Play Button-->
-                <a href="#" class="toggle-panel"><img src="../images/playButton.svg" class="stupakNav-playButton svg-inject" data-src="../images/playButton.svg" data-fallback="../images/png/playButton.png"/></a>                
+                <a href="#" class="toggle-panel"><img src="../images/playButton.svg" class="stupakNav-playButton svg-inject" data-src="../images/playButton.svg" data-fallback="../images/png/playButton.png"/></a>
             </div>
-                
+
                 <!--Exit Video Container Button-->
                 <div id="text-toggle-exit"><a href="#" class="toggle-panel2"><img src="../images/exit.svg" class="stupakNav-exitButton svg-inject" data-src="../images/exit.svg" data-fallback="../images/png/exit.png"/></a></div>
-                
+
             <!--Video Container-->
             <div class="scotch-panel-wrapper"><div id="scotch-panel"></div></div>
 
@@ -105,13 +124,13 @@
 
 <!------------------------------------------------ END BODY ------------------------------------------------->
 <!-- PRELOADER CUSTOM JS -->
-    <script type="text/javascript" src="../js/libs/Preloader.js"></script>     
-<!-- MENU SCRIPTS -->    
+    <script src="../js/libs/Preloader.js"></script>
+<!-- MENU SCRIPTS -->
     <script src="js/libs/meny.js"></script>
 <!--FAVICON SCRIPT-->
     <script src="js/libs/favico.js"></script>
-<!-- CUSTOM SCRIPTS -->    
-    <script src="js/main.js"></script> 
+<!-- CUSTOM SCRIPTS -->
+    <script src="js/main.js"></script>
 <!--Google Analytics-->
 <script type="text/javascript" src="../js/GA.js"></script>
     </body>

@@ -1,27 +1,27 @@
 /*===================================================================================================================================================================================================================================
 *
-* 
+*
 * Author: Branden Dane - Full Stack Developer
 * Contact Email: Branden@DaneTheory.com
-* My Portfolio & Other Goodies Can Be Found At: 
+* My Portfolio & Other Goodies Can Be Found At:
 * =======> http://www.DaneTheory.com/ <========
-*                 
-*                 ;                                                                                                                 
-*                 ED.                                                                                   :                           
-*                 E#Wi                     L.                     ,;                             ,;    t#,                          
-*                 E###G.                   EW:        ,ft       f#i          .    .            f#i    ;##W.   j.                    
+*
+*                 ;
+*                 ED.                                                                                   :
+*                 E#Wi                     L.                     ,;                             ,;    t#,
+*                 E###G.                   EW:        ,ft       f#i          .    .            f#i    ;##W.   j.
 *                 E#fD#W;               .. E##;       t#E     .E#t  GEEEEEEELDi   Dt         .E#t    :#L:WE   EW,        f.     ;WE.
-*                 E#t t##L             ;W, E###t      t#E    i#W,   ,;;L#K;;.E#i  E#i       i#W,    .KG  ,#D  E##j       E#,   i#G  
-*                 E#t  .E#K,          j##, E#fE#f     t#E   L#D.       t#E   E#t  E#t      L#D.     EE    ;#f E###D.     E#t  f#f   
-*                 E#t    j##f        G###, E#t D#G    t#E :K#Wfff;     t#E   E#t  E#t    :K#Wfff;  f#.     t#iE#jG#W;    E#t G#i    
-*                 E#t    :E#K:     :E####, E#t  f#E.  t#E i##WLLLLt    t#E   E########f. i##WLLLLt :#G     GK E#t t##f   E#jEW,     
-*                 E#t   t##L      ;W#DG##, E#t   t#K: t#E  .E#L        t#E   E#j..K#j...  .E#L      ;#L   LW. E#t  :K#E: E##E.      
-*                 E#t .D#W;      j###DW##, E#t    ;#W,t#E    f#E:      t#E   E#t  E#t       f#E:     t#f f#:  E#KDDDD###iE#G        
-*                 E#tiW#G.      G##i,,G##, E#t     :K#D#E     ,WW;     t#E   E#t  E#t        ,WW;     f#D#;   E#f,t#Wi,,,E#t        
-*                 E#K##i      :K#K:   L##, E#t      .E##E      .D#;    t#E   f#t  f#t         .D#;     G#t    E#t  ;#W:  E#t        
-*                 E##D.      ;##D.    L##, ..         G#E        tt     fE    ii   ii           tt      t     DWi   ,KK: EE.        
-*                 E#t        ,,,      .,,              fE                :                                               t          
-*                 L:                                    ,                                                                           
+*                 E#t t##L             ;W, E###t      t#E    i#W,   ,;;L#K;;.E#i  E#i       i#W,    .KG  ,#D  E##j       E#,   i#G
+*                 E#t  .E#K,          j##, E#fE#f     t#E   L#D.       t#E   E#t  E#t      L#D.     EE    ;#f E###D.     E#t  f#f
+*                 E#t    j##f        G###, E#t D#G    t#E :K#Wfff;     t#E   E#t  E#t    :K#Wfff;  f#.     t#iE#jG#W;    E#t G#i
+*                 E#t    :E#K:     :E####, E#t  f#E.  t#E i##WLLLLt    t#E   E########f. i##WLLLLt :#G     GK E#t t##f   E#jEW,
+*                 E#t   t##L      ;W#DG##, E#t   t#K: t#E  .E#L        t#E   E#j..K#j...  .E#L      ;#L   LW. E#t  :K#E: E##E.
+*                 E#t .D#W;      j###DW##, E#t    ;#W,t#E    f#E:      t#E   E#t  E#t       f#E:     t#f f#:  E#KDDDD###iE#G
+*                 E#tiW#G.      G##i,,G##, E#t     :K#D#E     ,WW;     t#E   E#t  E#t        ,WW;     f#D#;   E#f,t#Wi,,,E#t
+*                 E#K##i      :K#K:   L##, E#t      .E##E      .D#;    t#E   f#t  f#t         .D#;     G#t    E#t  ;#W:  E#t
+*                 E##D.      ;##D.    L##, ..         G#E        tt     fE    ii   ii           tt      t     DWi   ,KK: EE.
+*                 E#t        ,,,      .,,              fE                :                                               t
+*                 L:                                    ,
 *
 *                                                 "Knock On The Sky And Listen To The Sound"
 *
@@ -127,13 +127,11 @@ textarea {
 /**
 *** END PRELOADER STYLES***/
 /**
-*** VEROLD STYLES***/ 
+*** VEROLD STYLES***/
 /* Application */
 body, html, canvas, #verold3d {
   margin: 0 auto;
   padding: 0;
-  /* overflow: hidden; */
-  width: 100%;
   height: 100%;
 }
 
@@ -141,11 +139,6 @@ body {
     background: none;
 }
 
-/* Section Tag Hidden Until Pre-Loader Finishes */
-section {
-    display:none;
-}
-  
   /**********************LOADING SCENE CSS**************************/
 .load-scene a {
     font: 400 100%/1em 'Proxima Nova', sans-serif;
@@ -241,7 +234,6 @@ section {
 html,
 body {
 	height: 100%;
-	overflow: hidden;
 }
 
 body {
@@ -394,42 +386,7 @@ nav a:focus::before {
 /**
  * Main contents area
  */
-.contents {
-	background: #333;
-	padding: 20px 40px;
-	width: 100%;
-	height: 100%;
-	overflow-y: auto;
 
-	-webkit-overflow-scrolling: touch;
-	-webkit-transform-style: preserve-3d;
-
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-	.contents>article {
-		max-width: 400px;
-	}
-	.contents p {
-		margin: 10px 0 10px 0;
-		font-size: 16px;
-		line-height: 1.32;
-	}
-	.contents small {
-		display: block;
-		margin-top: 10px;
-		padding-top: 10px;
-		color: #333;
-		font-size: 0.85em;
-		border-top: 1px dashed #ccc;
-
-		-webkit-text-size-adjust: none;
-	}
-	.contents .sharing {
-		position: absolute;
-		bottom: 20px;
-	}
 #text-toggle-wrapper {
     position: absolute;
     display: block;
@@ -525,6 +482,104 @@ a.toggle-panel2{
 /**
 *** END MENU STYLES ***/
 
+
+
+/**
+*** ABOUT PAGE STYLES ***/
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+	height: 100%;
+	min-height: 100%;
+}
+section {
+	opacity: 1;
+}
+.loaded section,
+.no-js section {
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
+}
+main {
+	overflow-x: hidden;
+}
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('../images/about1.png');}
+
+/* Slide 2 */
+#slide-2 .bcg {background: none; background-color: #010101; height: 310px; text-align: center;}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('../images/about2.png');}
+
+
+/* Slide 4 */
+.curtainContainer {width: 100%; height: 100%; position: relative;}
+.curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0;}
+.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
+
+#slide-4 .bcg {background-image:url('../images/about1.png');}
+
+/* Slide 5 */
+#slide-5 {position: relative;}
+#slide-5 .bcg {background-image:url('../images/about2.png');}
+#slide-5 .bcg2 {background-image:url('../images/about1.png'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1;}
+#slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
+
+.hsContainer {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.hsContent {
+	max-width: 450px;
+	margin: -150px auto 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	color: #ebebeb;
+	padding: 0 8%;
+	text-align: center;
+}
+	.hsContent h2,
+	.copy h2 {
+		color: #ffffff;
+		font-size: 45px;
+		line-height: 48px;
+		margin-bottom: 12px;
+	}
+	.hsContent p {
+		width: 400px;
+		margin: 0 auto;
+		color: #b2b2b2;
+	}
+	.hsContent a {
+		color: #b2b2b2;
+		text-decoration: underline;
+	}
+	.bgBlack {
+		background-color: rgba(0,0,0,0.75);
+		padding: 3px 10px;
+	}
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -609,10 +664,10 @@ a.toggle-panel2{
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 710px) {
-    
+
     .stupakLogo {
         display: block;
         position: relative;
@@ -623,7 +678,7 @@ and (max-device-width : 710px) {
         left: 40%;
         top: 5%;
     }
-    
+
     nav {
         display: block;
         position: relative;
@@ -641,7 +696,7 @@ and (max-device-width : 710px) {
         margin-right: auto;
         text-align: center;
 }
-    
+
     svg#play {
         position: absolute;
         display: block;
