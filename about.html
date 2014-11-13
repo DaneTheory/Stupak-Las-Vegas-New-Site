@@ -17,23 +17,22 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
 
 <!--VENDOR FIXES-->
-        <!--
-<script src="../js/vendor/prefixfree.min.js"></script>
+        <script src="../js/vendor/prefixfree.min.js"></script>
         <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <!--[if lt IE 9]>
 	        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	    <![endif]-->
 
 <!--INITIALIZR BOLIERPLATE SCRIPTS-->
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-	        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="../js/plugins.js"></script>
-        <script src="../js/libs/skrollr.js"></script>
+        <script type="text/javascript" src="../js/libs/skrollr.js"></script>
         <script src="../js/libs/smooth-scroll.js"></script>
+        <script src="../js/libs/keepinview.js"></script>
         	<script>
 				smoothScroll.init();
 			</script>
-
 
 
 
@@ -45,46 +44,45 @@
     <!--
 ----MAIN SITE NAVIGATION-->
 
+<div class="stupakNav">
+            <img src="../images/stupak-logo-main.svg" class="stupakLogo svg-inject" data-src="../images/stupak-logo-main.svg" data-fallback="../images/png/stupak-logo-main.png"/>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="team.html">OUR TEAM</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="events.html">EVENTS</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                 </nav>
+
+</div>
+<img src="../images/menu-icon.svg" class="stupakNav-icon svg-inject" data-src="../images/menu-icon.svg" data-fallback="../images/png/menu-icon.png"/>
 
 <!--
 ----END MAIN SITE NAVIGATION-->
 
 </head>
-<body>
+    <body>
 <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!------------------------------------------------ BEGIN BODY ------------------------------------------------->
-<div class="nav-wrapper">
-	<div class="stupakNav">
-	            <img src="../images/stupak-logo-main.svg" class="stupakLogo svg-inject" data-src="../images/stupak-logo-main.svg" data-fallback="../images/png/stupak-logo-main.png"/>
-	                <nav>
-	                    <ul>
-	                        <li><a href="index.html">HOME</a></li>
-	                        <li><a href="about.html">ABOUT</a></li>
-	                        <li><a href="team.html">OUR TEAM</a></li>
-	                        <li><a href="services.html">SERVICES</a></li>
-	                        <li><a href="events.html">EVENTS</a></li>
-	                        <li><a href="gallery.html">GALLERY</a></li>
-	                        <li><a href="blog.html">BLOG</a></li>
-	                        <li><a href="contact.html">CONTACT</a></li>
-	                    </ul>
-	                 </nav>
 
-	</div>
-	<img src="../images/menu-icon.svg" class="stupakNav-icon svg-inject" data-src="../images/menu-icon.svg" data-fallback="../images/png/menu-icon.png"/>
-</div>
 
-<div class="contents">
 
-		<main>
+		<main id="main">
 
 	        <section id="slide-1" class="homeSlide">
 	        	<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
 		        	<div class="hsContainer">
 			    		<div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
-				    		<h2>The Stupak Las Vegas<br/>Difference</h2>
+				    		<h2>Fade out elements before<br />they leave viewport</h2>
+				    		<p>This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.</p>
 			    		</div>
 		        	</div>
 	        	</div>
@@ -94,19 +92,20 @@
 		    	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
 			    	<div class="hsContainer">
 			    		<div class="hsContent">
-				    		<h2 data-center="opacity: 1" data--230-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2"></h2>
-				    		<p data-center="opacity: 1" data--180-bottom="opacity: 0" data-190-top="opacity: 1" data-30-top="opacity: 0" data-anchor-target="#slide-2 h2">Stupak Las Vegas is an experienced, single source destination management company. We specialize in meeting the discriminating needs of businesses, groups and individuals that want to experience the thrill of high-end Las Vegas hospitality, restaurants, hotels, nightclubs and special events.</p>
+				    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Fade me in and out</h2>
+				    		<p data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Here we are changing the background color from blue to black. Text is fading in at 206 pixels from the bottom and fading out 106 pixels from the top.</p>
 			    		</div>
 		        	</div>
 		    	</div>
 		    </section>
 <section id="slide-3" class="homeSlide">
-	<div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 30% 0px;" data-top-bottom="background-position: 0px 60%;" data-anchor-target="#slide-3">
+	<div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
     	<div class="hsContainer">
     		<div class="hsContent">
-    			<div class="plaxEl" data-250-top="opacity: 0" data--40p-top="opacity: 1;" data--160p-top="opacity: 0;" data--120p-bottom="opacity: 1; position:fixed; display:block; width: 100%; left:0;"  data-anchor-target="#slide-3">
-		    		<h2>Stupak is Las Vegas</h2>
-		    		<p style="color: white;">Known throughout Las Vegas as the “go-to” corporate destination expert, Stupak Las Vegas has the insider knowledge and connections with the most prestigious and sought-after venues that others simply cannot replicate. Building a long term trusting loyal relationships is our goal at Stupak Las Vegas.</p>
+    			<div class="plaxEl" data-106-top="opacity: 0" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"  data-anchor-target="#slide-3">
+		    		<h2>Fixed element fading in and out</h2>
+		    		<p><span class="bgBlack">Text is fixed 206 pixels from the top, while the background is moving 40 pixels to the left.</span></p>
+		    		<p><span class="bgBlack">Or did you think that the scooter is driving off?</span></p>
 	    		</div>
     		</div>
     	</div>
@@ -118,18 +117,40 @@
 			<div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4">
 				<div class="curtainContainer">
 
-					<div class="curtain" data-bottom-top="opacity: 0" data-200-top="height: 0%; opacity: 0; top: -10%;" data-center="height: 110%; opacity: 0.85; top: 0%;" data-anchor-target="#slide-4"></div>
-					<div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--100-bottom="opacity: 1;" data-280-top="opacity: 1;" data-0-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
-						<h2><a href="contact.html">Contact Us</a></h2><br/><p style="color: white;">And let our professional team design your company or group a Las Vegas experience that will be fun and leave you with everlasting memories.</p>
+					<div class="curtain" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-4"></div>
+					<div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
+						<h2>Curtain effect while you scroll</h2>
 					</div>
 
 				</div>
-
 			</div>
 		</section>
-	</main>
 
-</div>
+		    <section id="slide-5" class="homeSlide homeSlideTall2">
+		    	<div class="bcg">
+			    	&nbsp;
+		    	</div>
+		    	<div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-5">
+			    	<div class="hsContainer">
+				    	<div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-5">
+				    		<h2>Fixed element fading in and out</h2>
+				    		<p>Showcase your beautiful images before blurring the scene and fading in your headline.</p>
+			    		</div>
+			    	</div>
+		    	</div>
+		    	<div class="bcg bcg3" data-300-bottom="opacity: 0;" data-100-bottom="opacity: 1;" data-anchor-target="#slide-5">
+			    	<div class="hsContainer">
+				    	<div class="hsContent" data-100-bottom="opacity: 0;" data-bottom="opacity: 1;" data-anchor-target="#slide-5">
+				    		<h2>The End</h2>
+				    		<p>Not enough parallax goodness? Let me know in the comments or hit me up at <a href="https://www.twitter.com/ihatetomatoes" target="_blank">@ihatetomatoes</a>.</p>
+			    		</div>
+			    	</div>
+		    	</div>
+		    </section>
+
+		</main>
+
+
 
 
 <!------------------------------------------------ END BODY ------------------------------------------------->
@@ -139,8 +160,12 @@
 <!--FAVICON SCRIPT-->
 <script src="../js/libs/favico.js"></script>
 <!-- CUSTOM SCRIPTS -->
+<script src="..js/libs/imagesloaded.js"></script>
+<script src="..js/libs/skrollr.js"></script>
 <script src="../js/about_main.js"></script>
-
+<script type="text/javascript">
+	$(".stupakNav").keepInView({ zindex: 99999999999, scrollable: false }).trigger('update');
+</script>
 <!--Google Analytics-->
 <script src="../js/GA.js"></script>
 

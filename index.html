@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
 		 <style type="text/css">
-	        body {
+	        .stupakNav {
 		    	width: 100%;
 				overflow: hidden;
 			}
@@ -65,7 +65,7 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="#" id="load_aboutPage">ABOUT</a></li>
                         <li><a href="team.html">OUR TEAM</a></li>
                         <li><a href="services.html">SERVICES</a></li>
                         <li><a href="events.html">EVENTS</a></li>
@@ -102,13 +102,44 @@
             <div class="load-screen-logo"><img src="../production/images/dark-logo.png"></div>
         </div>
 
+
+
+
+        <!--Ajax Call For About Page-->
+        <script type="text/javascript" language="javascript">
+	     var $loading = $('#ajaxPreloader').hide();
+				$(document)
+				  .ajaxStart(function () {
+				    $loading.show();
+				  })
+				  .ajaxStop(function () {
+				    $loading.hide();
+  				});
+		   $(document).ready(function() {
+		      $("#load_aboutPage").click(function(event){
+		          $('#aboutPage').load('about.html');
+		      });
+		   });
+   </script>
+
+
+            	<!--About Page Pulled Into div-->
+				<div id="ajaxPreloader">
+					<img src="../images/status.gif" />
+				</div>
+				<div id="aboutPage"></div>
+
+
+
+
+
+
             <!--Main Text-->
             <div id="text-toggle-wrapper">
                 <div id="textMain">
                     <h1 class="experience">EXPERIENCE</h1>
                     <h1 class="lasVegas">LAS VEGAS</h1>
                 </div>
-
                 <!--Play Button-->
                 <a href="#" class="toggle-panel"><img src="../images/playButton.svg" class="stupakNav-playButton svg-inject" data-src="../images/playButton.svg" data-fallback="../images/png/playButton.png"/></a>
             </div>
@@ -116,11 +147,11 @@
                 <!--Exit Video Container Button-->
                 <div id="text-toggle-exit"><a href="#" class="toggle-panel2"><img src="../images/exit.svg" class="stupakNav-exitButton svg-inject" data-src="../images/exit.svg" data-fallback="../images/png/exit.png"/></a></div>
 
-            <!--Video Container-->
-            <div class="scotch-panel-wrapper"><div id="scotch-panel"></div></div>
+	            <!--Video Container-->
+	            <div class="scotch-panel-wrapper"><div id="scotch-panel"></div></div>
 
-            <!-- ThreeJS Scene -->
-            <div id="verold3d" class="contents"></div>
+	            <!-- ThreeJS Scene -->
+	            <div id="verold3d" class="contents"></div>
 
 <!------------------------------------------------ END BODY ------------------------------------------------->
 <!-- PRELOADER CUSTOM JS -->

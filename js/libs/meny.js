@@ -51,7 +51,7 @@ var Meny = {
 			// Default options, gets extended by passed in arguments
 			var config = {
 				width: 300,
-				height: 300,
+				height: ( window.innerHeight ),
 				position: POSITION_L,
 				threshold: 40,
 				angle: 30,
@@ -217,10 +217,10 @@ var Meny = {
 				dom.cover = document.createElement( 'div' );
 
 				// Disabled until a falback fade in animation is added
-				dom.cover.style.position = 'absolute';
+				dom.cover.style.position = 'absolute' + ' ' + '!important';
 				dom.cover.style.display = 'block';
 				dom.cover.style.width = '100%';
-				dom.cover.style.height = '100%';
+				dom.cover.style.height = ( window.innerHeight ) + 'px' + ' ' + '!important';
 				dom.cover.style.left = 0;
 				dom.cover.style.top = 0;
 				dom.cover.style.zIndex = 1000;
@@ -270,7 +270,7 @@ var Meny = {
 
 					case POSITION_L:
 						style.width = config.width + 'px';
-						style.height = '100%';
+						style.height = ( dom.contents.scrollHeight = window.innerHeight ) + 'px';
 						break;
 				}
 
@@ -348,7 +348,7 @@ var Meny = {
 
 					Meny.addClass( dom.wrapper, 'meny-active' );
 
-					dom.cover.style.height = dom.contents.scrollHeight + 'px';
+					dom.cover.style.height = ( dom.contents.scrollHeight <= window.innerHeight ) + 'px';
 					dom.cover.style.visibility = 'visible';
 
 					// Use transforms and transitions if available...

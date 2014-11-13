@@ -264,30 +264,17 @@ h1,
 h2 {
 	font-size: 24px;
 }
-.nav-wrapper{
-	position:fixed;
-	top:0;
-	left:0;
-	height:100%;
-	min-width: 50px;
-	z-index: 99999;
-}
+
 .stupakNav {
+	display: none;
 	padding: 20px;
-	overflow: hidden;
+	overflow: auto;
 	background: #333;
 	color: #f3f3F3;
-
+    z-index: 99999999999 !important;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-
-	position: absolute;
-	width: 260px;
-	height: 100%;
-	left: -100000px;
-	top: 0;
-	z-index: 1;
 }
 .stupakNav ul {
     margin: 0;
@@ -303,34 +290,23 @@ h2 {
 }
 
 .stupakNav-icon {
-
-	display: block;
-
-
-	height: 100%;
-
+	position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    z-index: 9999999999 !important;
     background: rgba(243, 243, 243, 1);
     box-shadow: 2px 0px 2px rgba(180, 151, 89, 1);
-
-
+    left: 0;
+    opacity: 1;
     min-width: 45px;
-
+    width: 10%;
     max-width: 70px;
     -webkit-transition: all 350ms ease-in-out;
 	   -moz-transition: all 350ms ease-in-out;
 	    -ms-transition: all 350ms ease-in-out;
 	     -o-transition: all 350ms ease-in-out;
 	        transition: all 350ms ease-in-out;
-
-
-	width: 100%;
-
-	position: absolute;
-
-	top: 0;
-
-	z-index: 2;
-
 }
 .meny-active .stupakNav-icon {
 		left: -10%;
@@ -516,9 +492,14 @@ a.toggle-panel2{
 body, html {
 	height: 100%;
 	min-height: 100%;
+	background-color: #000000;
+	overflow:hidden;
 }
-section {
-	opacity: 1;
+.no-js {
+	padding-top: 106px;
+}
+h2 {
+	margin-top: 0;
 }
 .loaded section,
 .no-js section {
@@ -530,6 +511,7 @@ section {
 main {
 	overflow-x: hidden;
 }
+
 .bcg {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -545,7 +527,7 @@ main {
 #slide-2 .bcg {background: none; background-color: #010101; height: 310px; text-align: center;}
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../images/about2.png');}
+#slide-3 .bcg {background-image:url('../images/scene5.jpg');}
 
 
 /* Slide 4 */
@@ -553,12 +535,12 @@ main {
 .curtainContainer .curtain {width: 300%; height: 1px; background-color: #000000; position: absolute; top: 25%; left: 0; opacity: 0;}
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 
-#slide-4 .bcg {background-image:url('../images/about1.png');}
+#slide-4 .bcg {background-image:url('../images/');}
 
 /* Slide 5 */
 #slide-5 {position: relative;}
-#slide-5 .bcg {background-image:url('../images/about2.png');}
-#slide-5 .bcg2 {background-image:url('../images/about1.png'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1;}
+#slide-5 .bcg {background-image:url('../images/party1.jpg');}
+#slide-5 .bcg2 {background-image:url('../images/about2.png');; position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1;}
 #slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
 
 .hsContainer {
@@ -599,7 +581,6 @@ main {
 		background-color: rgba(0,0,0,0.75);
 		padding: 3px 10px;
 	}
-
 
 
 
