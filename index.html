@@ -12,54 +12,15 @@
 	    <meta name="keywords" content="stupak las vegas entertainment experience travel">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-<!--STYLESHEETS-->
         <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-		 <style type="text/css">
-	        .stupakNav {
-		    	width: 100%;
-				overflow: hidden;
-			}
-			.contents {
-				background: #333;
-				padding: 20px 40px;
-				width: 100%;
-				height: 100%;
-				overflow-y: auto;
+       
+</head>
+    <body>
+<!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-				-webkit-overflow-scrolling: touch;
-				-webkit-transform-style: preserve-3d;
-
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-			}
-		</style>
-
-<!--VENDOR FIXES-->
-        <script src="js/vendor/prefixfree.min.js"></script>
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <!--[if lt IE 9]>
-	        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]-->
-
-<!--INITIALIZR BOLIERPLATE SCRIPTS-->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-        <script src="js/libs/scotchPanels.js"></script>
-        <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="../runtime/verold.loader.js"></script>
-        <script>
-            verold.load('body', '../runtime/application.json');
-        </script>
-
-<!--SVG SCRIPTS-->
-    <script src="js/libs/svg-injector.map.js"></script>
-    <script src="js/libs/svg-injector.min.js"></script>
-
-<!--
-----MAIN SITE NAVIGATION-->
 <div class="stupakNav">
             <img src="../images/stupak-logo-main.svg" class="stupakLogo svg-inject" data-src="../images/stupak-logo-main.svg" data-fallback="../images/png/stupak-logo-main.png"/>
                 <nav>
@@ -76,21 +37,12 @@
                  </nav>
         </div>
 <img src="../images/menu-icon.svg" class="stupakNav-icon svg-inject" data-src="../images/menu-icon.svg" data-fallback="../images/png/menu-icon.png"/>
-<!--
-----END MAIN SITE NAVIGATION-->
 
-</head>
-    <body>
-<!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<!------------------------------------------------ BEGIN BODY ------------------------------------------------->
-<!-- Pre-Loader -->
 <div id="preloader">
     <div id="status">&nbsp;</div>
 </div>
-    <!-- Fallback ThreeJS Pre-Loader -->
+
+
     <div id="load-scene" class="load-scene">
         <div class="load-progress">
             <a id="load-text">LOADING STUPAK LAS VEGAS</a>
@@ -103,9 +55,6 @@
         </div>
 
 
-
-
-        <!--Ajax Call For About Page-->
         <script type="text/javascript" language="javascript">
 	     var $loading = $('#ajaxPreloader').hide();
 				$(document)
@@ -122,19 +71,12 @@
 		   });
    </script>
 
-
-            	<!--About Page Pulled Into div-->
 				<div id="ajaxPreloader">
 					<img src="../images/status.gif" />
 				</div>
 				<div id="aboutPage"></div>
 
 
-
-
-
-
-            <!--Main Text-->
             <div id="text-toggle-wrapper">
                 <div id="textMain">
                     <h1 class="experience">EXPERIENCE</h1>
@@ -153,16 +95,30 @@
 	            <!-- ThreeJS Scene -->
 	            <div id="verold3d" class="contents"></div>
 
-<!------------------------------------------------ END BODY ------------------------------------------------->
-<!-- PRELOADER CUSTOM JS -->
-    <script src="../js/libs/Preloader.js"></script>
-<!-- MENU SCRIPTS -->
-    <script src="js/libs/meny.js"></script>
-<!--FAVICON SCRIPT-->
-    <script src="js/libs/favico.js"></script>
-<!-- CUSTOM SCRIPTS -->
-    <script src="js/main.js"></script>
-<!--Google Analytics-->
-<script type="text/javascript" src="../js/GA.js"></script>
-    </body>
-</html>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/vendor/prefixfree.min.js"></script>
+<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+<script src="js/vendor/jquery-1.11.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="js/libs/scotchPanels.js"></script>
+<script src="js/libs/velocity.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="runtime/verold.loader.js"></script>
+    <script>
+        verold.load('body', '../runtime/application.json');
+    </script>
+
+
+<script src="js/libs/svg-injector.map.js"></script>
+<script src="js/libs/svg-injector.min.js"></script>
+<script src="js/libs/meny.js"></script>
+<script src="js/libs/favico.js"></script>
+<script src="js/libs/Preloader.js"></script>
+<script src="js/main.js"></script>
+
+	<!-- <script type="text/javascript" src="js/GA.js"></script> -->
+	    </body>
+	</html>
